@@ -1,19 +1,14 @@
 // JavaScript Document
 'use strict';
-var arr = new Array (10); 
-var min = 1;
-var max = 100;
-for (var i=0;i<10;i++){
-	arr[i]=randomInteger(min,max);
-	alert ("namber"+"  "+ i+"  "+ arr[i]);
-}	
+var arr = ["Есть", "жизнь", "на", "Марсе"];
 
-alert (arr[arr.length-1] + " end");	  
+var arrLengths = arr.map(function(ar) {
+  return ar.length;
+});
 
-	function randomInteger(min,max) {
-		var rand = min - 0.5 + Math.random() * (max - min + 1);
-		rand = Math.round(rand);
-		return rand;
-	  }
-	  
+// получили массив с длинами
+alert( arrLengths ); 
+
+
+
   
